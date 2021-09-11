@@ -1,1 +1,40 @@
-// TODO
+.banner{
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+}
+.post{
+  max-width: 700px;
+  margin: 5rem auto;
+  
+  h1{
+    color: var(--heading);
+    font-size: 2.75rem;
+  }
+  .postInfo{
+    color: var(--info);
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1.5rem;
+    font-size: .8rem;
+
+    > span{
+      display: flex;
+      gap: .3rem;
+    }
+  }
+  .content{
+    margin-top: 2.5rem;
+    > div{
+      .title{
+        font-size: 1.5rem;
+        color: var(--heading);
+        margin: .5rem 0;
+      }
+      .body{
+        color: var(--body);
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}
