@@ -23,6 +23,16 @@
       gap: .3rem;
     }
   }
+  .updated_at{
+    font-size: .8rem;
+    color: var(--info);
+    margin-top: -.5rem;
+    display: block;
+
+    span{
+      text-transform: capitalize;
+    }
+  }
   .content{
     margin-top: 2.5rem;
     > div{
@@ -34,6 +44,48 @@
       .body{
         color: var(--body);
         margin: 1.5rem 0;
+      }
+    }
+  }
+  .outherPosts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+
+    hr{
+      width: 100%;
+      margin: 1rem 0;
+      border-color: #445;
+    }
+
+    a{
+      display: flex;
+      flex-direction: column;
+      padding: .4rem;
+      margin-top: .8rem;
+
+      border-radius: .4rem;
+      
+      transition: .2s;
+
+      span{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  
+        max-width: 12rem;
+      }
+
+      strong{
+        font-size:  .9rem;
+        color: var(--highlight);
+        padding: .3rem 0;
+      }
+
+      &:hover{
+        background: #99a1;
       }
     }
   }
